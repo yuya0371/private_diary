@@ -8,4 +8,5 @@ app_name='diary'
 urlpatterns=[
     path('',views.IndexView.as_view(),name="index"),
     path('hidden',views.TestView.as_view(),name="test"),
+    path('inquiry/',views.InquiryView.as_view(),name="inquiry"),
 ]
