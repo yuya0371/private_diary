@@ -16,6 +16,37 @@
             "env": {
                 "DB_USER": "postgres",
                 "DB_PASSWORD": "Yuya122901",
+                "DJANGO_SETTINGS_MODULE": "private_diary.settings_dev"
+            }
+        },
+        {
+            "name": "makemigrations",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "makemigrations"
+            ],
+            "django": true,
+            "program": "${workspaceFolder}\\manage.py",
+            "env": {
+                "DB_USER": "postgres",
+                "DB_PASSWORD": "Yuya122901",
+                "DJANGO_SETTINGS_MODULE": "private_diary.settings_dev"
+            }
+        },
+        {
+            "name": "migrate",
+            "type": "debugpy",
+            "request": "launch",
+            "args": [
+                "migrate"
+            ],
+            "django": true,
+            "program": "${workspaceFolder}\\manage.py",
+            "env": {
+                "DB_USER": "postgres",
+                "DB_PASSWORD": "Yuya122901",
+                "DJANGO_SETTINGS_MODULE": "private_diary.settings_dev"
             }
         }
     ]
